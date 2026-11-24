@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+
 namespace RSVPeople.Api.Models;
 
 public class Event
