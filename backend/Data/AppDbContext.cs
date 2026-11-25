@@ -37,7 +37,5 @@ public class AppDbContext : DbContext
             .HasForeignKey(r => r.AttendeeId)
             .OnDelete(DeleteBehavior.SetNull);
     }
-
-
         
 }

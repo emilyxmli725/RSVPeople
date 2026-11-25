@@ -19,9 +19,6 @@ public class User
 
     [Required, MaxLength(20)]
     public string Role { get; set; } = "attendee"; // Default role is "attendee", other role is "organizer"
-
-    public string RefreshToken { get; set; }
-    public string refeshTokenExpiryTime { get; set; }
     
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
