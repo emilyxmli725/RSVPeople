@@ -1,8 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./Pages/Home"
+import Attendee from "./Pages/Attendee"
+import Organizer from "./Pages/Organizer"
+import RSVP from "./Pages/RSVP"
+import ConfirmationRSVP from "./Pages/ConfirmationRSVP"
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-100">
-      <h1 className="text-3xl font-bold">RSVPeople</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/attendee" element={<Attendee />} />
+        <Route path="/organizer" element={<Organizer/>} />
+        <Route path="/rsvp" element={<RSVP />} />
+        <Route path="/confirmationrsvp" element={<ConfirmationRSVP />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
