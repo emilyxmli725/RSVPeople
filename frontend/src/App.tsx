@@ -4,6 +4,7 @@ import Attendee from "./Pages/Attendee"
 import Organizer from "./Pages/Organizer"
 import RSVP from "./Pages/RSVP"
 import ConfirmationRSVP from "./Pages/ConfirmationRSVP"
+import Event from "./Pages/Event"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/organizer" element={<Organizer/>} />
         <Route path="/rsvp" element={<RSVP />} />
         <Route path="/confirmationrsvp" element={<ConfirmationRSVP />}/>
+        <Route path="/event" element={<Event />}/>
       </Routes>
     </BrowserRouter>
   )
